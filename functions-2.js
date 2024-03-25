@@ -116,3 +116,16 @@ function totalOfArrays(arr) {
 
 let arrayOfArrays = [arrayToMirror, arrayToMirror2, 3]
 console.log(totalOfArrays(arrayOfArrays))
+
+//TODO - Create a function that takes a number as an argument and returns an array of numbers counting down from the given number to zero
+function inputCountdown(int) {
+    let countdown = []
+    let i = int
+    while(i !== -1) {
+        countdown.push(i)
+        i--
+    }
+    return countdown
+}
+
+console.log(inputCountdown(7))
