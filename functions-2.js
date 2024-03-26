@@ -162,7 +162,10 @@ function equationMakerSwitch(number1 = Int, operator, number2 = Int) {
         case "/":
             result = number1/number2;
             break;
+        default:
+            break;
     }
+    return result
 }
 
 console.log(equationMaker(5, "-", 9))
