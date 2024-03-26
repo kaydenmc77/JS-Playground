@@ -129,3 +129,45 @@ function inputCountdown(int) {
 }
 
 console.log(inputCountdown(7))
+
+//TODO - Create a function that takes two numbers and an operator and makes an equation
+function equationMaker(number1 = Int, String, number2 = Int) {
+    let result = 0
+    if(String == "*") {
+        result = (number1 * number2)
+    } else if(String == "/") {
+        result = (number1 / number2)
+    } else if(String == "+") {
+        result = (number1 + number2)
+    } else if(String == "-") {
+        result = (number1 - number2)
+    } else {
+        result = "Not a valid equation"
+    }
+    return result
+}
+
+function equationMakerSwitch(number1 = Int, operator, number2 = Int) {
+    let result = 0
+    switch(operator) {
+        case "+":
+            result = number1+number2;
+            break;
+        case "-":
+            result = number1-number2;
+            break;
+        case "*":
+            result = number1*number2;
+            break;
+        case "/":
+            result = number1/number2;
+            break;
+    }
+}
+
+console.log(equationMaker(5, "-", 9))
+
+// Use Switch
+
+// ES6
+const calNum2 = (num1, operator, num2) => operator+num2 === "/0" ? "Can not divide by 0!" : eval(num1+operator+num2)
