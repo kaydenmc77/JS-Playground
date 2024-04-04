@@ -206,11 +206,12 @@ const rotateArray2 = arr => (arr.unshift(arr.pop()), arr)
 //TODO - Create a function that can take a flat array (1D) and change it to a nest array to represent an incremental depth level
 // Example nestArray([1,2,6,3]) -> [1, [2, [6, [3]]]
 
-function nestArray(arr) {
-    if(arr.length == 1) return arr
-    let temp = []
-    for(let i = 0; 1 < arr.length; i++) temp.push(arr[i])
-    return [arr[0], nestArray(temp)]
-}
+// function nestArray(arr) {
+//     if(arr.length == 1) return arr
+//     let temp = []
+//     for(let i = 0; 1 < arr.length; i++) temp.push(arr[i])
+//     return [arr[0], nestArray(temp)]
+// }
 
-console.log(nestArray([1,2,6,3]))
+// console.log(nestArray([1,2,6,3]))
+
