@@ -58,3 +58,4 @@ console.log(productAli((2,2), (3,2), (1,3)));
 
 // // console.log(stringsSort(["Ali", "Kahwaji", "NMIT"]));
 // console.log(ascentOrder(["Ali", "Kahwaji", "NMIT"]));
+
