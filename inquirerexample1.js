@@ -1,8 +1,6 @@
 // 4.6.2024 3:03PM
 
-
-// Not working
-const inquirer = require('inquirer')
+import inquirer from "inquirer"
 
 async function question() {
     const questions = [

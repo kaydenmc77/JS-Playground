@@ -11,6 +11,7 @@ async function askList() {
     };
 
     const answer = await inquirer.prompt(question);
+    // answer.framework is calling the item framework from the object Answer, which is created from the question object item "name" which is "frameworks" // Guess
     console.log(`You prefer the ${answer.framework} framework`)
 }
 
